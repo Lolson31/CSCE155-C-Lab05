@@ -1,3 +1,10 @@
+/*
+ * Author: Luke Olson
+ * Date:   9/16/2020
+ * This program finds thei-th order statistic of a collection of numbers
+ *
+**/
+
 #include <stdlib.h>
 
 #include "orderStatistics.h"
