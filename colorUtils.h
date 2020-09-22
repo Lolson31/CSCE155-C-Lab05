@@ -46,4 +46,4 @@
   * Returns the blue sepia-toned RGB value of the
   * three given RGB values
   */
-  int toSepiaBlue (int r, int g, int b);
+  int toSepiaBlue (int r, int g, int b)
