@@ -10,7 +10,7 @@ int max (int x, int y, int z)
 int min (int a, int b, int c)
 {
   int min = a < b ? a : b;
-  min = m < c ? min : c;
+  min = min < c ? min : c;
   return min;
 }
 
