@@ -157,7 +157,7 @@ int main(int argc, char **argv) {
   }
 
   r = 101, g = 38, b = 41;
-  expectedResult = 77;
+  expectedResult = 76;
   printf("TESTING: toSepiaRed(%d,%d,%d): ", r, g, b);
   result = toSepiaRed(r, g, b);
   if(result != expectedResult) {
