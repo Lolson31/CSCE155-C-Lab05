@@ -134,6 +134,7 @@ int main(int argc, char **argv) {
   printf("TESTING: toGrayScaleAverage(%d,%d,%d): ", r, g, b);
   result = toGrayScaleAverage(r, g, b);
   //TODO: this test case will fail, why?
+  //Because it truncates, not rounds
   if(result != expectedResult) {
     printf("FAILED: toGrayScaleAverage returned %d, expected %d\n", result, expectedResult);
     numFailed++;
