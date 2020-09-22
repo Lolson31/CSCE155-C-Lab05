@@ -128,7 +128,7 @@ int main(int argc, char **argv) {
     printf("PASSED\n");
     numPassed++;
   }
-  
+
   r = 100, g = 39, b = 40;
   expectedResult = 60;
   printf("TESTING: toGrayScaleAverage(%d,%d,%d): ", r, g, b);
@@ -143,6 +143,54 @@ int main(int argc, char **argv) {
   }
 
   //TODO: add your test cases here
+
+  r = 101, g = 38, b = 41;
+  expectedResult = 51;
+  printf("TESTING: toGrayScaleLuminosity(%d,%d,%d): ", r, g, b);
+  result = toGrayScaleLuminosity(r, g, b);
+  if(result != expectedResult) {
+    printf("FAILED: toGrayScaleLuminosity returned %d, expected %d\n", result, expectedResult);
+    numFailed++;
+  } else {
+    printf("PASSED\n");
+    numPassed++;
+  }
+
+  r = 101, g = 38, b = 41;
+  expectedResult = 77;
+  printf("TESTING: toSepiaRed(%d,%d,%d): ", r, g, b);
+  result = toSepiaRed(r, g, b);
+  if(result != expectedResult) {
+    printf("FAILED: toSepiaRed returned %d, expected %d\n", result, expectedResult);
+    numFailed++;
+  } else {
+    printf("PASSED\n");
+    numPassed++;
+  }
+
+  r = 101, g = 38, b = 41;
+  expectedResult = 68;
+  printf("TESTING: toSepiaGreen(%d,%d,%d): ", r, g, b);
+  result = toSepiaGreen(r, g, b);
+  if(result != expectedResult) {
+    printf("FAILED: toSepiaGreen returned %d, expected %d\n", result, expectedResult);
+    numFailed++;
+  } else {
+    printf("PASSED\n");
+    numPassed++;
+  }
+
+  r = 101, g = 38, b = 41;
+  expectedResult = 53;
+  printf("TESTING: toSepiaBlue(%d,%d,%d): ", r, g, b);
+  result = toSepiaBlue(r, g, b);
+  if(result != expectedResult) {
+    printf("FAILED: toSepiaBlue returned %d, expected %d\n", result, expectedResult);
+    numFailed++;
+  } else {
+    printf("PASSED\n");
+    numPassed++;
+  }
 
   printf("Number Test Cases Passed: %6d\n", numPassed);
   printf("Number Test Cases Failed: %6d\n", numFailed);
