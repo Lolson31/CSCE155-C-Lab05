@@ -28,16 +28,16 @@
   * Returns the red sepia-toned RGB value of the
   * three given RGB values
   */
-  int toSepiaRed (int r, int g, int b)
+  int toSepiaRed (int r, int g, int b);
 
   /**
    * Returns the green sepia-toned RGB value of the
    * three given RGB values
    */
-   int toSepiaGreen (int r, int g, int b)
+   int toSepiaGreen (int r, int g, int b);
 
    /**
     * Returns the blue sepia-toned RGB value of the
     * three given RGB values
     */
-    int toSepiaBlue (int r, int g, int b)
+    int toSepiaBlue (int r, int g, int b);
